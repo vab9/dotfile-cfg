@@ -2,6 +2,9 @@
 # ENVIRONMENT VARIABLES
 # ================================
 
+# Adding sbin to path (homebrew)
+set -gx PATH /usr/local/sbin $PATH
+
 # Setting Pyenv automatically
 status --is-interactive; and source (pyenv init -|psub)
 
